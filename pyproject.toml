@@ -1,0 +1,16 @@
+[project]
+name = "access_com_mcp"
+version = "0.1.0"
+description = "COM-based MS Access Reader MCP using pywin32 and MCP Python SDK (stdio, COM-only, no HTTP/ODBC)"
+authors = ["Your Name <your.email@example.com>"]
+requires-python = ">=3.9"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+pywin32 = "^306"
+mcp = "*"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

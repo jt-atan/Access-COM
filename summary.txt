@@ -1,0 +1,28 @@
+Project: Access_COM MCP (COM-based MS Access Reader)
+
+Purpose:
+- Use pywin32/COM to access MS Access modules, queries, forms, and MSys tables.
+- Attach to a running Access instance (user opens DB in Access UI first) to bypass security and ensure all links are available.
+
+Project Structure:
+- access_com.py: Contains AccessCOMManager class for all COM logic.
+- server.py:
+  - Original ODBC/ADO endpoints (using FastMCP, pyodbc) are preserved.
+  - New FastAPI endpoints for COM, all under /com/* (connect, modules, queries, forms, MSys tables).
+
+Main MCP Tools (COM):
+- /com/connect / /com/disconnect
+- /com/modules / /com/modules/{name}
+- /com/queries / /com/queries/{name}
+- /com/forms / /com/forms/{name}
+- /com/msys_tables / /com/msys_tables/{name}
+
+Workflow:
+1. User opens the Access DB in Access UI.
+2. COM MCP attaches to the running instance.
+3. Endpoints allow browsing modules, queries, forms, and system tables.
+
+Other Notes:
+- All COM logic is modular and separated from ODBC/ADO logic.
+- Task tracking in TASKS.md, documentation in README_COM.md.
+- Project context and requirements are saved in Windsurf memory for easy resumption.

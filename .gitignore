@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.mdb
+*.accdb
+*.log
+access_com - *.py
