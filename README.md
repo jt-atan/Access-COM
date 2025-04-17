@@ -22,8 +22,8 @@ This guide assumes you already have 32-bit Microsoft Access Database Engine inst
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/jt-atan/Acess-mdb-MPC.git
-cd Access_mdb
+git clone https://github.com/jt-atan/Access-COM.git
+cd Access_COM
 ```
 
 ### Step 2: Create a Virtual Environment (Recommended)
@@ -281,3 +281,6 @@ This will connect to the included sample database and run some basic queries.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+=======
+# Access-COM
+>>>>>>> 118dc00021deb99cb96ac5976187ef8548712f0e
